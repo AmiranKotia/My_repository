@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html>
+  <link rel="stylesheet" href="new.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <head>
+    <title>My web</title>
+  </head>
+  <body>
+    <!-- <header  class="header">
+    <img src="data:image/jpeg;base64,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" alt="">
+    <h1>თურქული ნათება</h1>
+    <nav>
+        <button><a href="">Home</a></button>
+        <button><a href="https://mosaicage.com/blogs/news/turkish-moroccon-mosaic-lamps">News</a></button>
+        <button><a href="https://www.artmasterclass.com.au/blogs/news/history-of-turkish-lamps">About</a></button>
+        <form>
+            <label>იმეილი</label>
+            <input type="email">
+            <label>პაროლი</label>
+            <input type="password">
+            <button>შესვლა</button>
+        </form>
+        <hr>
+    </nav>
+</header>
+<hr>
+<main class="main">
+    <article class="article">
+        <section class="s1"></section>
+        <p class="p1">ისლამური ხელოვნება — შუა საუკუნეებში ჩამოყალიბებული ხელოვნება, რომელიც ემყარება ისლამის პრინციპებს. ისლამური ხელოვნების დახასიათება რთულია, რადგან იგი მოიცავს ქვეყნების  ფართო სპექტრს, პერიოდებსა და ჟანრებს მათ შორის ისლამური არქიტექტურა, ისლამური კალიგრაფია, ისლამური მინიატურა, მინის წარმოება, კერამიკა და ტექსტილი-ხალიჩები და ნაქარგები.</p>
+        <img class="img1" src="https://www.oriental-lights.com/wp-content/uploads/sites/8/2023/05/Turkse-lamp-voor-sfeer-800x530.jpg" alt="">
+        <section class="s2"></section>
+        <p class="p2">ისლამურ ხელოვნებაში მოიცავს როგორც რელიგიურ, ისე საერო ხელოვნების ფორმებს. რელიგიური ხელოვნება წარმოდგენილია კალიგრაფიით, არქიტექტურითა და რელიგიური შენობების ავეჯით, მოწყობილობებით (მაგ. მეჩეთის ნათურები და გირიხის ფილები), ხის ნაკეთობები და ხალიჩები საერო ხელოვნება ასევე აყვავდა ისლამურ სამყაროში, თუმცა მისი ზოგიერთი ელემენტი გააკრიტიკეს რელიგიის სწავლულებმა.</p>
+    </article>
+</main>
+<aside class="aside">
+    <h1>სიახლეები</h1>
+    სიახლე არ არის
+</aside>
+<hr>
+<footer>
+    <ul class="foot">
+        <hr>
+        <p>საკონტაქტო ინფორმაცია:</p>
+        <li>ტელეფონის ნომერი: 511548895</li>
+        <li>მისამართი: ქ. თბილისი, გურამიშვილის 67</li>
+        <li><a href="">პირადი ჩათი</a></li>
+    </ul>
+</footer> -->
+    <!-- <div class="div3">
+<div class="Maindiv">
+    <div class="child">
+    <div class="gchild1"></div>
+    <div class="gchild2"></div>
+</div>
+</div>
+</div> -->
+    <!-- <h1 class="h1">List of users</h1>
+<div class="div2">
+    <button>Home</button>
+    <button>News</button>
+    <button>About</button>
+    <button>Contact</button>
+</div>
+<div class="div">
+<table class="table">
+    <thead>
+        <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Email</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr  class="adults">
+        <td>Amo Kot</td>
+        <td>27</td>
+        <td>kotamo@gmail.com</td>
+        </tr>
+        <tr class="child">
+            <td>Jek San</td>
+            <td>11</td>
+            <td>none</td>
+        </tr>
+        <tr  class="adults">
+            <td>Kuro San</td>
+            <td>18</td>
+            <td>konichiwa</td>
+        </tr>
+    </tbody>
+</table>
+</div>
+<img src="https://media1.giphy.com/media/3oEjI5VtIhHvK37WYo/giphy.gif" alt="" class="img"> -->
+
+    <!-- <header class="maindiv">
+      <div class="child">
+        <div class="box1">
+          <i class="fa-solid fa-square-phone"></i>
+          <h4>*7007 / +995 (32) 2 60 30 60</h4>
+        </div>
+      </div>
+      <nav class="child2">
+        <div class="box2">
+          <a href="" class="ategs">სავაჭრო პოლიტიკა</a>
+          <a href="" class="ategs">განვადება</a>
+          <a href="" class="ategs">ფილიალები</a>
+          <a href="" class="ategs">ყველა აქცია</a>
+        </div>
+      </nav>
+    </header>
+    <div class="maindiv2">
+      <div class="bdiv">
+        <div class="img">
+          <div class="img1">
+            <img src="images/main-logo.svg" alt="Image" class="zmr" />
+          </div>
+        </div>
+        <div class="cdiv">
+          <nav class="nav">
+            <button class="butnav">
+              <i class="fa-solid fa-list-ul"></i> ნავიგაცია
+            </button>
+            <input type="search" name="" id="" placeholder="ძიება" />
+            <nav class="butr">
+              <button class="basket">
+                <i class="fa-solid fa-cart-shopping"></i>კალათა
+              </button>
+              <button class="login">
+                <i class="fa-regular fa-circle-user"></i>შესვლა
+              </button>
+            </nav>
+          </nav>
+        </div>
+      </div>
+    </div> -->
+
+    <!-- <div class="mainDiv">
+      <div class="bigDiv">
+        <div class="leftDiv">
+          <div class="lpic">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4FD3Fbf7Iry0ez38lpH3oW_OqlUWxqeXg-bqEOb1Szn3uq_OXBcGubcvWuT5AM2Y6RIo&usqp=CAU"
+              alt=""
+            />
+          </div>
+          <div class="lname">
+            <span>James Franco</span>
+          </div>
+          <div class="licons">
+            <div class="post">
+              <span>123 Post</span>
+              <span> 5123 Likes</span>
+            </div>
+            <div class="il">
+              <i class="fa-regular fa-thumbs-up"></i>
+              <i class="fa-regular fa-thumbs-down"></i>
+              <i class="fa-brands fa-square-twitter"></i>
+              <i class="fa-regular fa-envelope"></i>
+            </div>
+          </div>
+          <div class="lbuttons">
+            <button>Follow</button>
+            <button>Message</button>
+          </div>
+        </div>
+        <div class="leftDiv">
+          <div class="lpic">
+            <img
+              src="https://cdn2.vectorstock.com/i/1000x1000/69/71/anime-boy-flat-app-icon-with-long-shadow-vector-3626971.jpg"
+              alt=""
+            />
+          </div>
+          <div class="lname">
+            <span>Paul Anderson</span>
+          </div>
+          <div class="licons">
+            <div class="post">
+              <span>215 Post</span>
+              <span> 3245 Likes</span>
+            </div>
+            <div class="il">
+              <i class="fa-regular fa-thumbs-up"></i>
+              <i class="fa-regular fa-thumbs-down"></i>
+              <i class="fa-brands fa-square-twitter"></i>
+              <i class="fa-regular fa-envelope"></i>
+            </div>
+          </div>
+          <div class="lbuttons">
+            <button>Follow</button>
+            <button>Message</button>
+          </div>
+        </div>
+        <div class="leftDiv">
+          <div class="lpic">
+            <img
+              src="https://cdn5.vectorstock.com/i/1000x1000/69/69/anime-boy-face-flat-app-icon-with-long-shadow-vector-3626969.jpg"
+              alt=""
+            />
+          </div>
+          <div class="lname">
+            <span>Antonio Banderas</span>
+          </div>
+          <div class="licons">
+            <div class="post">
+              <span>412 Post</span>
+              <span> 6974 Likes</span>
+            </div>
+            <div class="il">
+              <i class="fa-regular fa-thumbs-up"></i>
+              <i class="fa-regular fa-thumbs-down"></i>
+              <i class="fa-brands fa-square-twitter"></i>
+              <i class="fa-regular fa-envelope"></i>
+            </div>
+          </div>
+          <div class="lbuttons">
+            <button>Follow</button>
+            <button>Message</button>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <!-- <div class="dad">
+      <div class="loader"></div>
+    </div> -->
+    <!-- <div class="cardo">
+      <div class="card"></div>
+    </div> -->
+    <header>
+      <div class="tophead">
+        <nav class="topnav">
+          <i class="fa-regular fa-user"></i>
+          <i class="fa-solid fa-question"></i>
+          <img src="images/2023-10-28_09-34-removebg-preview.png" alt="" />
+        </nav>
+      </div>
+    </header>
+    <div class="bottomhead">
+      <div class="iconandname">
+        <i class="fa-solid fa-ellipsis-vertical"></i>
+        <img
+          src="https://media.contentapi.ea.com/content/dam/eacom/common/ea-wordmark-network-nav-coral.svg"
+          alt=""
+        />
+      </div>
+      <nav class="bottomnav">
+        <span>Games v</span>
+        <span>More Experiences v</span>
+        <span class="about">About v</span>
+        <div class="dropdown">
+          <p>Company</p>
+          <p>EA Studios</p>
+          <p>Carreers</p>
+          <p>Our Technology</p>
+          <p>EA Partners</p>
+        </div>
+        <span>Commitments v</span>
+        <span>Resources v</span>
+      </nav>
+    </div>
+    <main>
+      <div class="maintop">
+        <div class="mainleft">
+          <img
+            src="https://media.contentapi.ea.com/content/dam/ufc/ufc-5/images/2023/09/ufc5-horizontal-logo-white-xl-1.png"
+            alt=""
+          />
+          <h1>Try EA SPORTS™ UFC® 5 with EA Play*</h1>
+          <h5>
+            Members get 10 hours to experience the next evolution of the fight
+            game starting today.
+          </h5>
+          <button class="playnow">Play Now</button>
+        </div>
+      </div>
+      <div class="mainbottom">
+        <div class="bottomdiv">
+          <div class="bottomleft">
+            <h4>Dead Space™ is now on The Play List</h4>
+          </div>
+          <div class="bottomright">
+            <img
+              src="https://media.contentapi.ea.com/content/dam/eacom/subscription/ea-play/common/cta-logos/color/ea-play-logo-coral-cta-type-image.svg"
+              alt=""
+            />
+            <button>Join EA Play</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <h1 class="featured">Featured Games</h1>
+    <main class="main2">
+      <div class="topcards">
+        <div class="ufc">
+          <img src="images/UFC.png" alt="" class="ufcimg" />
+        </div>
+        <div class="nhl">
+          <img src="images/NHL.png" alt="" class="nhlimg" />
+        </div>
+        <div class="fc">
+          <img src="images/FC24.png" alt="" class="fcimg" />
+        </div>
+      </div>
+      <div class="bottomcards">
+        <div class="madden">
+          <img src="images/MADDEN.png" alt="" class="maddenimg" />
+        </div>
+        <div class="sims"><h3 class="official">Official Site</h3></div>
+        <div class="apex">
+          <img src="images/APEX.png" alt="" class="apeximg" />
+        </div>
+      </div>
+      <button class="latest">Latest Games</button>
+      <div class="latestupdates">
+        <h1>Latest Updates</h1>
+        <div class="latestspan">
+          <span>EA News</span>
+          <span>EA SPORTS FC</span>
+          <span>Apex Legends</span>
+          <span>Madden NFL</span>
+          <span>Star Wars</span>
+          <span>The Sims 4</span>
+          <span>F1</span>
+          <span>Battlefield</span>
+        </div>
+      </div>
+    </main>
+    <div class="cards">
+      <div class="cardstop">
+        <div class="card">
+          <img
+            src="https://media.contentapi.ea.com/content/dam/news/www-ea/common/ea-ppa-blog-thumbnail-xl.png.adapt.crop16x9.431p.png"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body1">
+            <span class="card-title1"
+              ><span class="electro">Electronic Arts Inc.</span>
+              <span>Oct 26, 2023</span></span
+            >
+            <h2>
+              Continuing Outstanding Sportspersonship with EA Positive Player
+              Award
+            </h2>
+            <p class="card-text1">
+              Celebrating sportspersonship with the EA SPORTS Positive Player
+              Award. Recognizing esports competitors dedicated to positive play.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="https://media.contentapi.ea.com/content/dam/news/www-ea/common/ea-com-ambient-orange.png.adapt.crop16x9.431p.png"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body1">
+            <span class="card-title1"
+              ><span class="electro">Electronic Arts Inc.</span>
+              <span>Oct 18, 2023</span></span
+            >
+            <h2>The Art of Destruction</h2>
+            <p class="card-text1">
+              In the ever-evolving world of video games, where digital universes
+              are born, exists a group of unsung artisans known as Destruction
+              Artists.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="https://media.contentapi.ea.com/content/dam/news/www-ea/common/ripple-effect-inspire-week-gathering-sept-2023-thumbnail.jpg.adapt.crop16x9.431p.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body1">
+            <span class="card-title1"
+              ><span class="electro">Electronic Arts Inc.</span>
+              <span>Oct 18, 2023</span></span
+            >
+            <h2>
+              Three EA Studios Earn Best Place to Work Accolades in the US
+            </h2>
+            <p class="card-text1">
+              Electronic Arts' (EA) Maxis, Ripple Effect, and Cliffhanger
+              recognized by GamesIndustry.biz as some of the industry's Best
+              Places to Work in the US.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="cardsbottom">
+        <div class="card">
+          <img
+            src="https://media.contentapi.ea.com/content/dam/eacom/common/criterion-logo-2018-dark-16-9.png.adapt.crop16x9.431p.png"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body1">
+            <span class="card-title1"
+              ><span class="electro">Electronic Arts Inc.</span>
+              <span>Sep 20, 2023</span></span
+            >
+            <h2>Criterion Games joins EA Entertainment</h2>
+            <p class="card-text1">
+              The studio is added to our world-class Battlefield studios.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="https://media.contentapi.ea.com/content/dam/news/www-ea/images/2023/09/ea-2023-impact-report-featured-image-16x9-thumbnail.jpg.adapt.crop16x9.431p.jpg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body1">
+            <span class="card-title1"
+              ><span class="electro">Electronic Arts Inc.</span>
+              <span>Sep 14, 2023</span></span
+            >
+            <h2>Sharing Our 2023 Impact Report</h2>
+            <p class="card-text1">
+              How EA is creating long-term value for our people, our players,
+              our society, and the planet.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <img
+            src="https://media.contentapi.ea.com/content/dam/news/www-ea/common/ppa-2023-blog-thumbnail.png.adapt.crop16x9.431p.png"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body1">
+            <span class="card-title1"
+              ><span class="electro">Electronic Arts Inc.</span>
+              <span>Sep 10, 2023</span></span
+            >
+            <h2>
+              The Electronic Arts Positive Player Award Winner Is Verhulst
+            </h2>
+            <p class="card-text1">
+              EA's Positive Player Award recognizes esports finalists who've
+              elevated gaming culture and celebrates their contribution of
+              positivity, skill, and impact to the ALGS community.
+            </p>
+          </div>
+        </div>
+      </div>
+      <button>Read More</button>
+    </div>
+    <div class="last">
+      <div class="divtop">
+        <div class="divtopleft">
+          <div class="imgandtext">
+            <img
+              src="https://media.contentapi.ea.com/content/dam/eacom/subscription/ea-play/common/hero-logos/color/ea-play-logo-coral-hero-logo-small.svg"
+              alt=""
+            />
+            <p>
+              Don't just get the game. Get more from your game. Unlock exclusive
+              rewards, members-only content, and a library of top titles.
+            </p>
+            <button>Join Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="divbottom">
+        <div class="divbottom1">
+          <div class="h22">
+            <h2>Players and Parents: Video game control is in your hands</h2>
+          </div>
+          <button>Learn More</button>
+        </div>
+      </div>
+      <div class="greydiv">
+        <div class="cendiv">
+          <div class="cendivtop">
+            <span
+              >*CONDITIONS, LIMITATIONS AND EXCLUSIONS APPLY. SEE
+              <a class="eaplay">EA PLAY TERMS</a>FOR DETAILS.</span
+            >
+          </div>
+          <div class="cendivbottom">
+            <div class="cenbotl">
+              <span>Careers</span>
+              <span>Executives</span>
+              <span>Impact Report</span>
+              <span>Our Commitments</span>
+              <span>Partner With Us</span>
+            </div>
+            <div class="cenbotr">
+              <div class="pdiv">
+                <p>Join The Conversation</p>
+              </div>
+              <div class="idiv">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitch"></i>
+                <i class="fa-brands fa-linkedin"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="foot">
+        <div class="topfoot">
+          <div>
+            <img
+              src="https://media.contentapi.ea.com/content/dam/eacom/common/medallion-violet.png"
+              alt=""
+            />
+          </div>
+          <div class="topfootl">
+            <span>Game Library</span>
+            <span>Subscribe</span>
+            <span>Redeem Code</span>
+            <span>EA App</span>
+            <span>About</span>
+            <span>Accessibility</span>
+            <span>Help</span>
+          </div>
+          <div class="topfootr">
+            <button>
+              <p>Language</p>
+              <span
+                ><img src="images/usa.png" alt="" />United States
+                <span class="v"> v</span></span
+              >
+            </button>
+          </div>
+        </div>
+        <div class="bottomfoot">
+          <div class="bottomfootl">
+            <div class="line1">
+              <span>Legal & Privacy</span>
+              <span>User Agreement</span>
+            </div>
+            <div class="line2">
+              <span>Privacy & Cookie Policy (Your Privacy Rights)</span>
+              <span>Online Service Updates</span>
+            </div>
+            <div class="line3">
+              <span>Security</span>
+              <span>Cookie Preferences</span>
+            </div>
+            <p>© 2023 Electronic Arts Inc.</p>
+          </div>
+          <div class="bottomfootr">
+            <img
+              src="https://privacy-policy.truste.com/privacy-seal/seal?rid=f1a11c5d-0232-4077-8498-2e69a38c1335"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

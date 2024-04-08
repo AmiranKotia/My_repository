@@ -1,0 +1,256 @@
+body {
+  width: 100%;
+  height: 210vh;
+  background-image: url("https://cdn.wallpapersafari.com/28/20/3X6CU8.jpg");
+  background-size: cover;
+  margin-top: 11vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header {
+  width: 100%;
+  height: 11vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: rgba(255, 255, 255, 0.5); */
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+.head {
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo img {
+  width: 24%;
+  border: 1px solid black;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.logo img:hover {
+  transform: scale(1.03);
+}
+nav {
+  color: hsl(0, 0%, 85%);
+  font-size: large;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.navtext {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  font-size: larger;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 600;
+}
+.navtext span {
+  cursor: pointer;
+  transition: 0.15s;
+}
+.navtext span:hover {
+  transform: scale(1.06);
+  text-decoration: line-through;
+}
+.navicons {
+  display: flex;
+  gap: 15px;
+  font-size: larger;
+}
+.navicons i {
+  cursor: pointer;
+  transition: 0.15s;
+}
+.fb:hover {
+  transform: scale(1.2);
+  color: #36538f;
+}
+.inst:hover {
+  transform: scale(1.2);
+  color: transparent;
+  background-clip: text;
+  background-image: linear-gradient(to bottom left, #cd486b, #4c68d7, #fccc63);
+}
+.twitt:hover {
+  transform: scale(1.2);
+  color: #1da1f2;
+}
+.linked:hover {
+  transform: scale(1.2);
+  color: #0077b5;
+}
+main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+.carousel {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 80px;
+  color: rgba(245, 245, 245, 0.5);
+  row-gap: 25px;
+}
+.frame {
+  width: 1500px;
+  height: 950px;
+  overflow: hidden;
+}
+.slider {
+  display: flex;
+  transition: all 1s ease;
+  width: 100%;
+  height: 100%;
+}
+.img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.top-carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+.leftArrow,
+.rightArrow {
+  cursor: pointer;
+  transition: 0.2s;
+}
+.leftArrow:hover,
+.rightArrow:hover {
+  color: rgba(255, 255, 255, 0.6);
+  transform: scale(1.05);
+}
+.bottom-carousel {
+  display: flex;
+  gap: 50px;
+}
+.button {
+  width: 20px;
+  height: 20px;
+  border: 3px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.bottommain {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cards {
+  width: 80%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  column-gap: 100px;
+}
+.cards img {
+  width: 430px;
+}
+.cardText h5 {
+  font-size: 40px;
+}
+footer {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0076b51e;
+}
+.footcontent {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.topfoot {
+  display: flex;
+  width: 90%;
+  height: 350px;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 50px;
+}
+.leftfoot {
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+}
+.ins {
+  margin-top: 50px;
+}
+.rightfoot {
+  color: rgb(255, 255, 255);
+  font-family: "Courier New", Courier, monospace;
+}
+.input {
+  width: 400px;
+}
+.subscr {
+  margin-top: 50px;
+}
+.btn:hover {
+  background-color: black !important;
+}
+.bottomfoot {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  margin-bottom: 20px;
+}
+.bottomtop {
+  display: flex;
+  gap: 40px;
+}
+.ins,
+.face,
+.tweet,
+.email,
+.number {
+  cursor: pointer;
+  transition: 0.1s;
+}
+.ins:hover,
+.face:hover,
+.tweet:hover,
+.email:hover,
+.number:hover {
+  color: rgba(255, 255, 255, 0.788);
+}
+.bottomtop span {
+  cursor: pointer;
+  transition: 0.1s;
+}
+.bottomtop span:hover {
+  color: rgba(255, 255, 255, 0.788);
+}
+.bubson {
+  cursor: pointer;
+  transition: 0.1s;
+}

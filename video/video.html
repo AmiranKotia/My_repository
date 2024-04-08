@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.css"
+      integrity="sha512-tx5+1LWHez1QiaXlAyDwzdBTfDjX07GMapQoFTS74wkcPMsI3So0KYmFe6EHZjI8+eSG0ljBlAQc3PQ5BTaZtQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="loader">
+      <img
+        src="https://media3.giphy.com/media/1lRrsraIsEYRW/giphy.gif?cid=ecf05e47tnwcynoq7zdwgthp115oo71sq7mtmgvhn2szs48g&ep=v1_gifs_related&rid=giphy.gif&ct=g"
+        alt=""
+      />
+    </div>
+    <header>
+      <video class="videoContainer" muted autoplay loop>
+        <source src="./Rain falling onto leaf.mp4" type="video/mp4" />
+      </video>
+      <h1 class="h1">NATURE</h1>
+      <button class="button">
+        <span>play</span>
+        <span>pause</span>
+        <span class="switch"></span>
+      </button>
+    </header>
+    <script src="video.js"></script>
+  </body>
+  <style>
+    body {
+      width: 100%;
+      height: 100vh;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    header {
+      width: 100%;
+      min-height: 100vh;
+      position: relative;
+      display: grid;
+      place-items: center;
+    }
+    .videoContainer {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -3;
+    }
+    h1 {
+      color: rgb(255, 255, 255, 0.8);
+      font-size: 100px;
+      font-family: Georgia, "Times New Roman", Times, serif;
+    }
+    .button {
+      position: absolute;
+      bottom: 9%;
+      right: 5%;
+      width: 7.5rem;
+      height: 2.5rem;
+      display: flex;
+      border-radius: 10px;
+      align-items: center;
+      justify-content: space-around;
+      border: none;
+      transition: 0.3s;
+      background-color: rgba(255, 255, 255, 0.7);
+    }
+    .button span {
+      display: inline-block;
+      font-size: 0.85;
+      cursor: pointer;
+      text-transform: capitalize;
+      color: #344e41;
+      font-family: Georgia, "Times New Roman", Times, serif;
+      font-weight: bold;
+    }
+    .switch {
+      position: absolute;
+      width: 50%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background: #344e41;
+      border-radius: 10px;
+      margin: 0;
+      display: block;
+      transition: 0.3s;
+    }
+    .slide .switch {
+      left: 50%;
+    }
+    header::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.2);
+      z-index: -1;
+    }
+    .loader {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: rgb(0, 0, 0);
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      visibility: visible;
+      z-index: 5;
+      transition: 6s;
+      width: 100%;
+      height: 100%;
+    }
+    .hide-loader {
+      z-index: -3;
+      visibility: hidden;
+    }
+    .loader img {
+      width: 100%;
+      height: 100%;
+    }
+  </style>
+</html>
