@@ -1,0 +1,14 @@
+[1mdiff --git a/python/test.py b/python/test.py[m
+[1mindex 2083355..e4cc8cb 100644[m
+[1m--- a/python/test.py[m
+[1m+++ b/python/test.py[m
+[36m@@ -1279,4 +1279,6 @@[m [mdef new():[m
+ def wer(number):[m
+     return f"{number} is an odd number" if number % 2 == 1 else f"{number} is an even number"[m
+ [m
+[31m-print(wer(4345213412))[m
+\ No newline at end of file[m
+[32m+[m[32mprint(wer(4345213412))[m
+[32m+[m
+[32m+[m[32mhello[m
+\ No newline at end of file[m

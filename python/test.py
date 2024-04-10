@@ -1276,3 +1276,9 @@ import random
 def new():
     pass
 
+def wer(number):
+    return f"{number} is an odd number" if number % 2 == 1 else f"{number} is an even number"
+
+print(wer(4345213412))
+
+print("hello")
