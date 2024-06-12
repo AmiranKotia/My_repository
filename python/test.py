@@ -1285,3 +1285,89 @@ import random
 
 
 
+# class Student:
+#     age = 15
+
+#     def __init__(self, name):
+#         self.name = name
+
+#     def run(self):
+#         return f"{self.name} can run"
+    
+
+# student = Student("John")
+# print(student.name)
+# print(student.age)
+
+
+
+import threading
+import time
+from queue import Queue
+
+# def plan_project():
+#     print("daigegma proektis starti")
+#     time.sleep(3)
+#     print("damtavrda proektis startis dagegmva")
+
+
+# def start_project():
+#     print("daiwko proekti")
+#     time.sleep(2)
+#     print("damtavrda proekti")
+
+
+# def end_project():
+#     print("dasrulebis dawkeba")
+#     time.sleep(7)
+#     print("dasrulebis dasruleba")
+
+
+# plan_project()
+# start_project()
+# end_project()
+
+
+
+# tasks = ['task1', 'task2', 'task3', 'task4']
+
+# def worker(task_queue):
+#     while True:
+#         task = task_queue.get()
+
+#         if task is None:
+#             break
+
+#         print(f'worker mushaobs amocana: {task}')
+#         time.sleep(random.randint(1, 3))
+#         task_queue.task_done()
+
+
+# task_queue = Queue()
+# num_worker = 3
+# threads = []
+
+# for i in range(num_worker):
+#     thread = threading.Thread(target=worker, args=(task_queue,))
+#     thread.start()
+#     threads.append(thread)
+
+# for task in tasks:
+#     task_queue.put(task)
+
+# for _ in range(num_worker):
+#     task_queue.put(None)
+
+# for thread in threads:
+#     thread.join()
+
+
+
+
+# def filtered_list(l):
+#     return [i for i in l if isinstance(i, int)]
+
+# l = [1,2,"a","b"]
+# print(filtered_list(l))
+
+
