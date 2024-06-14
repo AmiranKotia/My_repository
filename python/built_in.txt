@@ -1,0 +1,108 @@
+A
+abs() - Returns an absolute value of a number 
+aiter() - Return an asynchronous iterator for an asynchronous iterable. Equivalent to calling x.__aiter__()
+all() - Returns True, if all iterable elements are true, else False
+anext() - When awaited, return the next item from the given asynchronous iterator, or default if given and the iterator is exhausted.
+any() - Returnes True if any element of an iterable is true, False if the iterable is empty.
+ascii() - Returnes a string containing a printable representation of an object, but escape the non-ASCII characters in the string returned by repr() using \x, \u, or \U escapes. 
+
+B
+bin() - Convert an integer number to a binary string prefixed with “0b”. The result is a valid Python expression. If x is not a Python int object, it has to define an __index__() method that returns an integer.
+bool(object=False, /) - Return a Boolean value, i.e. one of True or False.
+breakpoint(*args, **kws) - This function drops you into the debugger at the call site. Specifically, it calls sys.breakpointhook(), passing args and kws straight through.
+bytearray() - 
+bytes() - Return a new “bytes” object which is an immutable sequence of integers in the range 0 <= x < 256. bytes is an immutable version of bytearray – it has the same non-mutating methods and the same indexing and slicing behavior.
+
+C
+callable(object) - Return True if the object argument appears callable, False if not. If this returns True, it is still possible that a call fails, but if it is False, calling object will never succeed.  Note that classes are callable (calling a class returns a new instance); instances are callable if their class has a __call__() method.
+chr(i) - Return the string representing a character whose Unicode code point is the integer i. For example, chr(97) returns the string 'a', while chr(8364) returns the string '€'. This is the inverse of ord(). @classmethod() - Transform a method into a class method. A class method receives the class as an implicit first argument, just like an instance method receives the instance.
+compile() - Compile the source into a code or AST object. Code objects can be executed by exec() or eval().
+complex() - Convert a single string or number to a complex number, or create a complex number from real and imaginary parts.
+
+D
+delattr() - 
+class dict(iterable, **kwarg) - Create a new dictionary. The dict object is the dictionary class.
+dir(object) - Without arguments, return the list of names in the current local scope. With an argument, attempt to return a list of valid attributes for that object.
+divmod(a, b) - Take two (non-complex) numbers as arguments and return a pair of numbers consisting of their quotient and remainder when using integer division.
+
+E
+enumerate(iterable, start=0) - Return an enumerate object. iterable must be a sequence, an iterator, or some other object which supports iteration. The __next__() method of the iterator returned by enumerate() returns a tuple containing a count (from start which defaults to 0) and the values obtained from iterating over iterable.
+eval(expression, globals=None, locals=None) - The expression argument is parsed and evaluated as a Python expression (technically speaking, a condition list) using the globals and locals dictionaries as global and local namespace.
+exec(object, globals=None, locals=None, /, *, closure=None) - This function supports dynamic execution of Python code. object must be either a string or a code object.
+
+F
+filter(function, iterable) - Construct an iterator from those elements of iterable for which function is true. iterable may be either a sequence, a container which supports iteration, or an iterator.
+float() - Return a floating point number constructed from a number or a string.
+format() - Convert a value to a “formatted” representation, as controlled by format_spec. The interpretation of format_spec will depend on the type of the value argument; however, there is a standard formatting syntax that is used by most built-in types: Format Specification Mini-Language.
+frozenset(iterable=set()) - Return a new frozenset object, optionally with elements taken from iterable. frozenset is a built-in class. See frozenset and Set Types — set, frozenset for documentation about this class.
+
+G
+getattr()
+globals()
+
+H
+hasattr()
+hash()
+help()
+hex()
+
+I
+id()
+input()
+int()
+isinstance()
+issubclass()
+iter()
+L
+len()
+list()
+locals()
+
+M
+map()
+max()
+memoryview()
+min()
+
+N
+next()
+
+O
+object()
+oct()
+open()
+ord()
+
+P
+pow()
+print()
+property()
+
+R
+range()
+repr()
+reversed()
+round()
+
+S
+set()
+setattr()
+slice()
+sorted()
+staticmethod()
+str()
+sum()
+super()
+
+T
+tuple()
+type()
+
+V
+vars()
+
+Z
+zip()
+
+_
+__import__()
