@@ -3,6 +3,8 @@
 #         number = number ** 2
 #         summ = sum(number ** 2 for number in numbers)
 #         return summ
+# # OR
+#     return sum(number ** 2 for number in numbers)
     
 # print(square_sum([10, 12, 15]))
 
@@ -428,3 +430,259 @@
 #         return "Player 2 won!"
 
 # print(rps("paper", "rock"))
+
+
+
+# def min_max(array):
+#     prices = []
+#     prices.append(min(array))
+#     prices.append(max(array))
+#     return prices
+
+# arr = [0, 1, 2, 454]
+# print(min_max(arr))
+
+
+
+# def get_grades(s1, s2, s3):
+#     average = (s1 + s2 + s3) / 3
+#     if 90 <= average <= 100:
+#         grade = "A"
+#     elif 80 <= average < 90:
+#         grade = "B"
+#     elif 70 <= average < 80:
+#         grade = "C"
+#     elif 60 <= average < 70:
+#         grade = "D"
+#     elif 0 <= average < 60:
+#         grade = "F"
+#     return grade
+
+# print(f"The average score is: {get_grades(85, 80, 85)}")
+
+
+
+# def bmi(weight, height):
+#     indx = weight / height**2
+#     if indx <= 18.5:
+#         return "Underweight"
+#     elif indx <= 25.0:
+#         return "Normal"
+#     elif indx <= 30.0:
+#         return "Overweight"
+#     return "Obese"
+
+# print(bmi(70, 1.81))
+
+
+
+# def greet(a):
+#     return a + b
+# a = "Hello "
+# b = "world!"
+# print(greet("Hey "))
+
+
+
+# from pymongo import MongoClient
+
+# client = MongoClient("localhost", 27017)
+
+# db = client.admin
+# collections = db.some_collection
+
+# for collection in collections.find():
+#     print(collection)
+
+
+
+# def make_negative(number):
+#     return number - number * 2 if number > 0 else number
+
+# print(make_negative(2))
+
+
+
+# def make_upper_case(s):
+#     return s.title()
+    
+# print(make_upper_case("jet it oue"))
+
+
+
+# def bool_to_word(boolean):
+#     return "Yes" if boolean else "No"
+
+
+
+# def milliseconds(h, m, s):
+#     if h <= 24 and m < 60 and s < 60:
+#         return (h * 3600 + m * 60 + s) * 1000
+#     else:
+#         return False
+
+
+# print(milliseconds(24,1,0))
+
+
+
+# def switch_it_up(number):
+#     transfer = {
+#         0: "Zero",
+#         1: "One",
+#         2: "Two",
+#         3: "Three",
+#         4: "Four",
+#         5: "Five",
+#         6: "Six",
+#         7: "Seven",
+#         8: "Eight",
+#         9: "Nine",
+#         10: "Ten"
+#     }
+#     return transfer[number]
+
+# print(switch_it_up(0))
+
+
+
+# def human_cat_dog_years(human_years):
+#     if human_years == 1:
+#         cat_years = 15
+#     elif human_years == 2:
+#         cat_years = 24
+#     elif human_years > 2:
+#         cat_years = 24 + (human_years - 2) * 4
+    
+#     if human_years == 1:
+#         dog_years = 15
+#     elif human_years == 2:
+#         dog_years = 24
+#     elif human_years > 2:
+#         dog_years = 24 + (human_years - 2) * 5
+
+#     return [human_years, cat_years, dog_years]
+
+# print(human_cat_dog_years(15))
+
+# # OR 
+
+# def human_years_cat_years_dog_years(x):
+#     return [f"Human years  {x}, Cat years: {24+(x-2)*4 if (x != 1) else 15}, Dog years: {24+(x-2)*5 if (x != 1) else 15}"]
+
+# print(human_years_cat_years_dog_years(3))
+
+
+
+# def count(s):
+#     # i_count = {}
+#     # for i in s:
+#     #     if i in i_count:
+#     #         i_count[i] += 1
+#     #     else:
+#     #         i_count[i] = 1
+#     # return i_count
+
+#     return {i: s.count(i) for i in s}
+
+# print(count("abbunalesaaterascvajhgjhasfasgfdf"))
+
+
+
+# def delete_nth(order, max_e):
+#     max = []
+#     for i in order:
+#         if max.count(i) < max_e:
+#             max.append(i)
+#     return max
+
+# print(delete_nth([1,2,3,1,2,1,2,3,3,2,1,3,1,2,3], 2))
+
+
+
+# def validate_pin(pin):
+#     return True if pin.isdigit() and len(pin) == 4 or pin.isdigit() and len(pin) == 6 else False
+
+# pin = input("Type your pin: ")
+# print(validate_pin(pin))
+
+
+
+
+# def find_needle(haystack):
+#     return f"found the needle at position {haystack.index("needle")}"
+
+# lst = ["hay", "junk", "hay", "hay", "moreJunk", "randomJunk", "some", "needle"]
+# print(find_needle(lst))
+
+
+
+
+# def leap(year):
+#     return f"The year {year} is a leap year" if year % 4 == 0 else f"The year {year} is not a leap year."
+
+# year = int(input("What year do you want to check? "))
+# print(leap(year))
+
+
+
+# vowels = ["a", "e", "i", "o", "u"]
+# string = input("Type any word: ")
+# count = 0
+# for i in string:
+#     if i in vowels:
+#         count += 1
+# print(f"There are {count} vowels in the word {string}.")
+
+
+
+# about = input("Tell me something about yourself in 10 words: ")
+# count = 0
+# for i in about.split(" "):
+#     count += 1
+# if count == 11:
+#     print(f"You exceeded the limit by {count - 10} word.")
+#     print(f"Total word count: {count}")
+# elif count > 11:
+#     print(f"You exceeded the limit by {count - 10} words.")
+#     print(f"Total word count: {count}")
+# else:
+#     print("That is very interesting.")
+#     print(f"Total word count: {count}")
+
+
+
+# def fibonacci(num):
+#     fibo = [0, 1]
+#     i = 2
+#     while i <= num:
+#         next_fibo = fibo[i - 1] + fibo[i - 2]
+#         fibo.append(next_fibo)
+#         i += 1
+#     return fibo
+
+# print(fibonacci(3))
+
+
+
+
+# def combined(one, two):
+#     comb = one + two
+#     comb.sort()
+#     return comb
+
+# first = [12,13,15,11,14,18,17,16,19,20]
+# second = [2,3,5,1,4,8,7,9,6,10]
+# print(combined(first, second))
+
+
+
+# def multiplication_table(n):
+#     i = 1
+#     while i <= 10:
+#         print(f"{n}x{i} = {i*n}")
+#         i+=1
+# multiplication_table(10)
+
+
+

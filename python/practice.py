@@ -44,7 +44,7 @@ id1 = Employee("Gela", "Gelashvili", 55000)
 id2 = Employee("Gocha", "Gochadze", 60000)
 id3 = Employee("Giga", "Gigauri", 60000)
 id4 = Employee("Gandon", "Gandonich", 60000)
-id5 = Employee("Gay", "Man", 60000)
+id5 = Employee("Gandy", "Man", 60000)
 
 Employee.set_raise_amt(1.1)
 
