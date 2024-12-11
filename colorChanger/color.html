@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 class="heading">Color Flipper</h1>
+    <div class="colordiv">
+      <h1 class="h1">Background Color: <span class="color">#F1F5F8</span></h1>
+    </div>
+    <div class="button">
+      <button>GENERATE RANDOM COLOR</button>
+    </div>
+    <script src="color.js"></script>
+  </body>
+  <style>
+    body {
+      width: 100%;
+      height: 100vh;
+      background-color: #f1f5f8;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+    }
+    .heading {
+      font-family: "Courier New", Courier, monospace;
+      font-size: 60px;
+    }
+    .colordiv {
+      background-color: grey;
+      color: white;
+      padding: 0 20px 0 20px;
+      border: 1px solid transparent;
+      border-radius: 10px;
+      font-family: "Courier New", Courier, monospace;
+      font-size: larger;
+    }
+    .color {
+      font-family: monospace;
+      color: rgb(255, 255, 255);
+    }
+    button {
+      padding: 10px 20px 10px 20px;
+      background-color: transparent;
+      font-family: "Courier New", Courier, monospace;
+      font-size: large;
+      font-weight: bolder;
+      border: 3px solid black;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+  </style>
+</html>

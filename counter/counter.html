@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1><u>COUNTER</u></h1>
+    <div class="container">
+      <h1 class="h1">0</h1>
+      <div class="buttonsdiv">
+        <button class="decrease btn">DECREASE</button>
+        <button class="reset btn">RESET</button>
+        <button class="increase btn">INCREASE</button>
+      </div>
+    </div>
+    <script src="counter.js"></script>
+  </body>
+  <style>
+    body {
+      width: 100%;
+      height: 90vh;
+      background-color: bisque;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      font-family: "Courier New", Courier, monospace;
+    }
+    .container h1 {
+      font-size: 90px;
+    }
+    .buttonsdiv {
+      display: flex;
+      gap: 20px;
+    }
+    button {
+      font-family: "Courier New", Courier, monospace;
+      font-size: 20px;
+      font-weight: bold;
+      border: 2px solid black;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+    button:hover {
+      background-color: black;
+      transform: scale(1.07);
+      color: white;
+    }
+    u {
+      font-size: 50px;
+    }
+  </style>
+</html>

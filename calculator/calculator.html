@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="main">
+      <div class="container">
+        <div class="screen">
+          <h1 class="screenText">0</h1>
+        </div>
+        <div class="buttons">
+          <button class="AC">AC</button>
+          <button class="plusMinus">+/-</button>
+          <button class="percentage">%</button>
+          <button class="division">/</button>
+          <button class="seven">7</button>
+          <button class="eight">8</button>
+          <button class="nine">9</button>
+          <button class="multiply">x</button>
+          <button class="four">4</button>
+          <button class="five">5</button>
+          <button class="six">6</button>
+          <button class="minus">-</button>
+          <button class="one">1</button>
+          <button class="two">2</button>
+          <button class="three">3</button>
+          <button class="plus">+</button>
+          <button class="zero">0</button>
+          <button class="dot">.</button>
+          <button class="equal">=</button>
+        </div>
+      </div>
+    </div>
+    <script src="calculator.js"></script>
+  </body>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    .main {
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-image: url("https://as2.ftcdn.net/v2/jpg/02/75/40/43/1000_F_275404305_TGpBGPwTjrjhILUmWTWlilXPM6Q4RyZl.jpg");
+      background-size: cover;
+      background-position: 0 25%;
+    }
+    .container {
+      width: 370px;
+      height: 670px;
+      border: 1px solid transparent;
+      border-radius: 10px;
+      border-style: groove;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-image: url("2023-12-29_10-12.png");
+      background-size: cover;
+      position: relative;
+      gap: 30px;
+      box-shadow: 0 0 15px 15px rgba(140, 213, 226, 0.473);
+      z-index: 1;
+    }
+    .container::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url("2023-12-29_10-12.png");
+      background-size: cover;
+      border-radius: 30px;
+      opacity: 0.7;
+      z-index: -1;
+    }
+    .screen {
+      width: 90%;
+      height: 20vh;
+      background-image: url("2023-12-28_18-42.png");
+      background-size: cover;
+      border: 1px solid rgb(6, 16, 48);
+      border-radius: 30px;
+      box-shadow: 0 0 8px 3px rgba(8, 48, 6);
+      position: relative;
+      z-index: 1;
+      color: rgb(144, 224, 238);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      align-items: flex-start;
+      font-size: x-large;
+      font-family: monospace;
+      overflow: hidden;
+    }
+    .screenText {
+      margin-right: 20px;
+      max-width: 100%;
+      padding: 5px;
+    }
+    .buttons {
+      width: 90%;
+      height: 40vh;
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      color: grey;
+    }
+    button {
+      width: 60px;
+      border: 1px solid hidden;
+      border-radius: 25%;
+      background-color: rgb(27, 27, 27);
+      color: white;
+      box-shadow: 0 0 2px 2px rgba(8, 48, 6);
+      font-size: x-large;
+      font-weight: bold;
+      font-family: monospace;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    button:hover {
+      transform: scale(1.03);
+      opacity: 0.9;
+    }
+    .zero {
+      width: 140px;
+      border-radius: 25px;
+    }
+    .division,
+    .multiply,
+    .minus,
+    .plus {
+      background-color: rgb(196, 88, 0);
+      color: rgba(8, 48, 6);
+    }
+    .equal {
+      background-color: rgba(8, 48, 6);
+    }
+    .plusMinus,
+    .percentage {
+      background-color: rgb(192, 192, 192);
+      color: rgba(8, 48, 6);
+    }
+    .AC {
+      color: rgb(207, 16, 16);
+      background-color: rgb(192, 192, 192);
+    }
+    .one,
+    .two,
+    .three,
+    .four,
+    .five,
+    .six,
+    .seven,
+    .eight,
+    .nine,
+    .zero {
+      text-decoration: underline grey;
+    }
+  </style>
+</html>

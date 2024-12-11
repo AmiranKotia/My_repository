@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.css"
+      integrity="sha512-tx5+1LWHez1QiaXlAyDwzdBTfDjX07GMapQoFTS74wkcPMsI3So0KYmFe6EHZjI8+eSG0ljBlAQc3PQ5BTaZtQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <h1>Best People Ever</h1>
+    <div class="underline"></div>
+    <div class="cardDiv">
+      <img
+        src="https://community.mis.temple.edu/files/avatars/14661/5ac7ca2e4f95d-bpfull.jpg"
+        class="img"
+        alt="image"
+      />
+      <p class="name"><b>Anna Maria Davitashvili</b></p>
+      <p class="job">LEASE ANALYST</p>
+      <p class="info">
+        Davita Consulting Group is a U.S.-based technology consulting firm with
+        a team of expert consultants that partner with companies around the
+        world to help successfully implement new business and technology. At
+        Davita Consulting Group, our consultants will help your business keep
+        pace with the changing consumer market. Our Cloud, Big Data, and BI
+        Analytics specialists will identify the tools necessary for the growth
+        […]
+      </p>
+      <div class="arrows">
+        <i class="fa-solid fa-chevron-left leftArrow"></i>
+        <i class="fa-solid fa-chevron-right rightArrow"></i>
+      </div>
+      <button class="random">Surprise Me</button>
+    </div>
+    <script src="cards.js"></script>
+  </body>
+  <style>
+    body {
+      width: 100%;
+      height: 100vh;
+      background-color: rgba(117, 202, 255, 0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+    h1 {
+      font-family: "Courier New", Courier, monospace;
+    }
+    .underline {
+      width: 100px;
+      height: 3px;
+      background-color: rgb(117, 202, 255);
+      margin: -15px 0 30px 0;
+    }
+    .cardDiv {
+      width: 600px;
+      height: 660px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background-color: rgb(255, 255, 255);
+      border: 1px solid transparent;
+      border-radius: 5px;
+      padding: 30px;
+      box-shadow: 0 0 10px 5px rgba(115, 160, 168, 0.247);
+      font-size: larger;
+      font-family: Georgia, "Times New Roman", Times, serif;
+    }
+    .img {
+      border: 2px solid rgb(117, 202, 255);
+      border-radius: 50%;
+      width: 200px;
+      height: 200px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .img:hover {
+      transform: scale(1.03);
+      box-shadow: 0 0 10px 0.2px rgb(117, 202, 255);
+    }
+    .job {
+      color: rgb(117, 202, 255);
+      margin-top: -10px;
+    }
+    .arrows {
+      display: flex;
+      gap: 50px;
+      margin: 10px 0 20px 0;
+      font-size: larger;
+      color: rgb(117, 202, 255);
+    }
+    .arrows i {
+      cursor: pointer;
+      transition: 0.2s;
+    }
+    .arrows i:hover {
+      transform: scale(1.2);
+    }
+    .random {
+      padding: 10px;
+      font-family: "Courier New", Courier, monospace;
+      font-size: large;
+      border: 1px solid rgb(117, 202, 255);
+      color: rgb(117, 202, 255);
+      background-color: white;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+    .random:hover {
+      transform: scale(1.1);
+      background-color: rgb(117, 202, 255);
+      border: 1px solid rgb(117, 202, 255);
+      color: white;
+    }
+    .info {
+      height: 220px;
+      text-decoration: underline;
+      font-family: "Courier New", Courier, monospace;
+    }
+  </style>
+</html>
